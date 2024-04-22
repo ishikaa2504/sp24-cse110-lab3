@@ -1,20 +1,22 @@
-<!-- meta, link
-
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8">
     <title>Lab 2</title>
     <link rel="icon" href="screenshots/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+    </style>
+
   </head>
   <body>
     
     <header>
       <div>
-        <h1><span>Kick-off</span> Meeting</h1>
+        <h1 class="jersey-10-regular"><span>Kick-off</span> Meeting</h1>
           <details>
             <summary>This will be Team 18's first meeting together. We will be going over the first assignment.</summary>
             <h4>5th April, 2024</h4>
@@ -29,19 +31,21 @@
 
       <hr>
       <section>
-        <h2>Attendance</h2>
-        <ol>
-          <li>Ishika</li>
-          <li>Bernico</li>
-          <li>Ryan</li>
-          <li>Min</li>
-          <li>Sarena</li>
-        </ol>
+        <h2 class="boxHeading">Attendance</h2>
+        <div class="gridContainer">
+          <ol>
+            <li class="gridItem">Ishika</li>
+            <li class="gridItem">Bernico</li>
+            <li class="gridItem">Ryan</li>
+            <li class="gridItem">Min</li>
+            <li class="gridItem">Sarena</li>
+          </ol>
+        </div>
       </section>
 
       <hr>
       <section>
-        <h2>Agenda</h2>
+        <h2 class="boxHeading">Agenda</h2>
         <ul>
           <li><a href="#roles">Define roles and responsibilities</a></li>
           <li><a href="#rules">Establish team rules</a></li>
@@ -51,19 +55,21 @@
 
       <hr>
       <section>
-        <h2>Meeting Minutes</h2>
-        <div>
-          <h3 id="roles">Define roles and responsibilities</h3>
+        <h2 class="boxHeading">Meeting Minutes</h2>
+        <div class="wrapper">
+          <h3 id="roles" class="boxSubHeading">Define roles and responsibilities</h3>
           <ul>
             <li>Sub-teams</li>
             <li>Specific roles under each sub-team</li>
             <li>Possible roles: Backend developer, Frontend developer, UI/UX designer</li>
           </ul>
-          <img src="/screenshots/lab2_ss.png" alt="Diagram" width="700">
+          
         </div>
+
+        <img src="/screenshots/lab2_ss.png" alt="Diagram" width="700">
         
-        <div>
-          <h3 id="rules">Establish team rules</h3>
+        <div class="wrapper">
+          <h3 id="rules" class="boxSubHeading">Establish team rules</h3>
           <ul>
             <li>Slack for communication at all times! Make sure you reply within <strong>24hours!</strong></li>
             <li>Weekly <strong><em>in-person</em></strong> meetings</li>
@@ -72,28 +78,37 @@
           </ul>
         </div>
         
-        <div>
-          <h3 id="contract">Develop team contract</h3>
-          <b>Responsibilities</b>
-            <ul>
-              <li>Actively participate and contribute to each assignment.</li>
-              <li>Communicate any issues or concerns promptly.</li>
-              <li>Collaborate with other team members and assist one another.</li>
-            </ul>
+        <div class="wrapper">
+          <h3 id="contract" class="boxSubHeading">Develop team contract</h3>
+          <div class="container">
 
-          <b>Commitment</b>
-            <ul>
-              <li>Regular attendance is mandatory. If unable to attend a meeting, each member should notify the leaders well in advance. We understand that unforeseen circumstances may arise, and that is why communication is key. Feel free to reach out to us, and together we can find a solution!</li>
-              <li>Conduct oneself respectfully towards other team members.</li>
-              <li>Reply to Slack messages (especially ones where everyone is tagged) within 24hours for smooth and effective communication. In the event of regular inactivity or two continuous missed messages/meetings without an explanation, we will first discuss the issue with you before escalating it to our TA. In summary: you have two strikes!</li>
-              <li>Complete tasks in a timely manner to avoid slowing down the progress of the group.</li>
-            </ul>
+            <div class="itemFlex">
+              <b>Responsibilities</b>
+              <ul>
+                <li>Actively participate and contribute to each assignment.</li>
+                <li>Communicate any issues or concerns promptly.</li>
+                <li>Collaborate with other team members and assist one another.</li>
+              </ul>
+            </div>
 
-          <b>Structure</b>
-            <ul>
-              <li>The group will be divided into sub-teams to ensure higher productivity and leveraging each individual’s unique strengths and skillsets.</li>
-              <li>Sub-teams will be assigned specific tasks, and each sub-team will closely collaborate with one another to achieve overall project goals.</li>
-            </ul>
+            <div class="itemFlex">
+              <b>Commitment</b>
+              <ul>
+                <li>Regular attendance is mandatory. If unable to attend a meeting, each member should notify the leaders well in advance. We understand that unforeseen circumstances may arise, and that is why communication is key. Feel free to reach out to us, and together we can find a solution!</li>
+                <li>Conduct oneself respectfully towards other team members.</li>
+                <li>Reply to Slack messages (especially ones where everyone is tagged) within 24hours for smooth and effective communication. In the event of regular inactivity or two continuous missed messages/meetings without an explanation, we will first discuss the issue with you before escalating it to our TA. In summary: you have two strikes!</li>
+                <li>Complete tasks in a timely manner to avoid slowing down the progress of the group.</li>
+              </ul>
+            </div>
+
+            <div class="itemFlex">
+              <b>Structure</b>
+              <ul>
+                <li>The group will be divided into sub-teams to ensure higher productivity and leveraging each individual’s unique strengths and skillsets.</li>
+                <li>Sub-teams will be assigned specific tasks, and each sub-team will closely collaborate with one another to achieve overall project goals.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -101,7 +116,7 @@
       <footer>
         <hr>
       
-        <h2>Conclusion</h2>
+        <h2 class="boxHeading">Conclusion</h2>
         <p>We discussed our first assignment and set goals and expectations for this quarter</p>
         <video controls width="700">
           <source src="screenshots/coding_video.mp4" type="video/mp4">
