@@ -1,4 +1,3 @@
-
 /* custom variable*/
 :root {
     --def-color: cornflowerblue;
@@ -106,12 +105,41 @@ button:active {
     
 }
 
-#roles {
+#roles, #rules, #contract {
     color: darkblue;
 }
-#rules {
-    color: darkblue;
+
+li[class*="gridItem"] {
+    background-color: #ffff00;
 }
-#contract {
-    color: darkblue;
+
+.container li {
+    background-color: aqua;
+}
+
+ul > li {
+    color: orchid;
+}
+
+h3 ~ ul {
+    font-size: 18px;
+}
+
+h3 + ul {
+    border: #0a6febc3 solid;
+}
+
+h2.boxHeading {
+    color: green;
+}
+
+h2:has(+ h3) {
+    font-size: 20px;
+}
+
+.wrapper {
+    font-size: 25px;
+    .roles & {
+        font-size: 20px;;
+    }
 }
