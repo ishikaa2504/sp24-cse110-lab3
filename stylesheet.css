@@ -140,6 +140,6 @@ h2:has(+ h3) {
 .wrapper {
     font-size: 25px;
     .roles & {
-        font-size: 20px;;
+        font-size: 20px;
     }
 }
