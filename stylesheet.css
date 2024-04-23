@@ -1,8 +1,5 @@
-/*
-Responsiveness
 
-*/
-
+/* custom variable*/
 :root {
     --def-color: cornflowerblue;
 }
@@ -11,7 +8,7 @@ h1 {
     margin: 10px;
 }
 
-b {
+b, strong {
     color:dimgrey;
 }
 
@@ -107,4 +104,14 @@ button:active {
 
 @media (max-width: 50rem) {
     
+}
+
+#roles {
+    color: darkblue;
+}
+#rules {
+    color: darkblue;
+}
+#contract {
+    color: darkblue;
 }
